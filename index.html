@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Budget</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+
+          <div class="top">
+              <div class="budget">
+                <div class="budget-title">
+                  Available Budget in <span id = "budget-month">%Month%</span>
+                </div>
+                <div class="budget-amount">
+                </div>
+
+                </div>
+                <div class="budget__income">Income
+                  <span class="income-right">
+                    <span class="budget__income-value">000.00</span>
+                    <span class="budget__income-percentage">&nbsp;</span>
+                  </span>
+                </div>
+                <div class="budget__expense">Expense
+                  <span class="expense-right">
+                    <span class="budget__expense-value">000.00</span>
+                    <span class="budget__expense-percentage">&nbsp;</span>
+                  </span>
+                </div>
+                <div class="" style="clear: both;">
+
+                </div>
+          </div>
+
+          <div class="bottom">
+            <div class="add">
+              <select class="add__type" name="">
+                <option value="inc" selected>+</option>
+                <option value="exp">-</option>
+              </select>
+              <input class="add__description" type="text" name="description" value="" placeholder="Add Description">
+              <input class="add__amount" type="number" name="amount" value="" placeholder="Add amount">
+              <button class="add__button" type="submit" name="add__button">Enter</button>
+            </div>
+
+            <div class="budget__display">
+              <div class="income-column"> <h3>Income</h3>
+                <!-- <div class="income-element" id="inc-%ID%">
+                  <span class="income-description">Project</span>
+                  <span class="income-amount">1500</span>
+                  <button class="delete__inc-button">X</button>
+                </div> -->
+
+              </div>
+              <div class="expense-column"> <h3>Expense</h3>
+                <!-- <div class="expense-element" id="exp-%ID%">
+                        <span class="expense-description">%description%</span>
+                        <span class="expense-amount">%amount%</span>
+                        <span class="expense-perc">%perc%</span>
+                        <button class="delete__exp-button">X</button></div> -->
+
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
