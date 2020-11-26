@@ -27,8 +27,6 @@
       return this.percentage;
     }
 
-
-
     function calcTotal(type) {
      var sum = 0;
      data.allItems[type].forEach(function(current) {
@@ -84,11 +82,6 @@
       if(index !== -1) {
         data.allItems[type].splice(index, 1);
       }
-
-
-
-
-
       },
 
         calculateBudget: function( ){
@@ -105,7 +98,6 @@
             } else {
               data.expensePercentage = -1;
             }
-
 
         },
         calcPercentage: function() {
@@ -136,7 +128,6 @@
         testing: function() {
           console.log(data);
         }
-
 
   }
   //-----------------
@@ -302,7 +293,6 @@
   //CONTROLLER
   var controller = (function(budgetctrl, UIctrl){
 
-
   function ctrlAddItem() {
     var input = UIctrl.getInput();
     console.log(input);
@@ -331,10 +321,8 @@
 
     UIctrl.displayPercentages(percs);
 
-
+    }
   }
-  }
-
 
   //delete item function
   function ctrlDeleteItem(event){
@@ -367,25 +355,13 @@
         document.addEventListener('keypress', function(e) {
           if (e.keyCode == 13 || e.which == 13) {
             ctrlAddItem();
-
-
-
           }
         });
 
         document.querySelector('.budget__display').addEventListener('click', ctrlDeleteItem);
-
         //changeType
         document.querySelector('.add__type').addEventListener('change', UIctrl.changeType);
     }
-
-
-
-
-
-
-
-
 
     return {
       init: function() {

@@ -79,11 +79,19 @@
 
 
 }
+.add__type{
+  outline: none;
+}
  .add__description, .add__amount, .add__button {
   background-color: #e6ecf5;
   padding: 5px;
   border: 1px solid grey;
   border-radius: 6px;
+  outline: none;
+}
+
+.add__button{
+  cursor: pointer;
 }
 .add__type, .add__description:focus, .add__amount:focus, .add__button {
   background-color: #d3edce;
